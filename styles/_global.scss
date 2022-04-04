@@ -1,0 +1,102 @@
+
+/* ===============================  NAV SMOOTH SCROLLING   ================================= */
+html{
+    scroll-behavior: smooth; 
+}
+/* ===============================  FONTS  ================================= */
+body{
+    /* font-family: 'Lato', sans-serif;
+    font-family: 'Poppins', sans-serif; */
+    font-family: 'Ruhl', sans-serif;
+} 
+
+/* ===============================  FLEX CLASS ================================= */
+.flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* ===============================  VARIABLES ================================= */ 
+
+$header1: 2rem;
+$header2: 1.7rem;
+$header3: 1.5rem;
+$header4: 1.3rem;
+$header5: 1rem;
+$text: 0.5rem;
+
+$gradient: linear-gradient(left, #38d39f, #38a4d3);
+$background-color: #154353;
+
+$color-main: #131c27;
+$color-dark-gray: rgb(86, 86, 87);
+$color-light-gray: rgb(124, 124, 124);
+$color-very-light-gray: rgb(168, 168, 168);
+$color-purple: rgb(137, 117, 151);
+
+
+/* ===============================   FONT-SIZEs ================================= */
+ 
+h1{ 
+
+    font-size:  $header1 ;
+}
+
+h2{
+    font-size:  $header2 ;
+}
+h3{
+    font-size:  $header3 ;
+}
+
+h4, a{
+    font-size:  $header4 ;
+}
+
+h5{
+    font-size:  $header5 ;
+}
+
+li,button,label,input,p{
+    font-size:  $text ;
+} 
+
+a{
+    color: $color-dark-gray;
+}
+
+
+// h1{ 
+//     font-size:  calc($header1 + 1vw) ;
+// }
+
+// h2{
+//     font-size:  calc($header2 + 1vw) ;
+// }
+// h3{
+//     font-size:  calc($header3 + 1vw) ;
+// }
+
+// h4, a{
+//     font-size:  calc($header4 + 1vw) ;
+// }
+
+// h5{
+//     font-size:  calc($header5 + 1vw) ;
+// }
+
+// li,button,label,input,p{
+//     font-size:   calc($text + 1vw);
+// } 
+
+/* ===============================  MIXINS  ================================= */
+
+@mixin flex($justify, $align, $direction){
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+}
